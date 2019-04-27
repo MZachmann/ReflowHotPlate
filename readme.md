@@ -2,9 +2,22 @@
 
 This contains code to control a hot plate and display the temperature. The raspberry pi is connected to a thermocouple, a solid-state-relay, and an OLED display.
 
-# pinouts
-<span style="color:green">HOTBIT</span> = 18 -- the pin with the switch
-<span style="color:green">FANBIT</span> = 22 -- the pin with the switch
+## <span style="color:green">Running Instructions</span>
+The following steps are required after power-on of the Raspberry Pi. Python is run twice because of a startup bug in the code.
+* sudo pigpiod
+* python3
+    - import control
+    - exit()
+* python3
+    - import control
+    - control.runScript()
+	- ... as desired after it completes
+	- control.runScript()
+
+# <span style="color:green">Pinouts</span>
+<span style="color:blue">HOTBIT</span> = 18 -- the pin that controls the relay
+
+<span style="color:blue">FANBIT</span> = 22 -- the pin that controls the fan
 
 # graphicslib
 
@@ -69,8 +82,4 @@ With the 500W heating cartridges
 |-|-|-|-|
 |250W|1.2|1.3|1|
 |500W|2.4|2.6|1.6|
-
-
-
-
 
