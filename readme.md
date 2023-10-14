@@ -35,8 +35,8 @@ At 100 percent duty cycle it uses 1000W
 
 # Measurements
 
-| Percentage | Stable Temperature |
-|---| ------------- | ----- |
+| Percentage | Stable Temperature F |
+|---| ------------- |
 |20|293|
 |25|340|
 |30|375|
